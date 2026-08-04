@@ -399,7 +399,7 @@
                         <div class="flex flex-wrap gap-1.5 mb-4">
                             <span class="text-xs font-mono px-2.5 py-1 rounded mono-card">Python</span>
                             <span class="text-xs font-mono px-2.5 py-1 rounded mono-card">PyTorch</span>
-                            <span class="text-xs font-mono px-2.5 py-1 rounded mono-card">Q-Learning</span>
+                            <span class="text-xs font-mono px-2.5 py-1 rounded mono-card">Docs</span>
                         </div>
                         <button onclick="openModal(3)"
                             class="w-full py-2.5 rounded-lg mono-card hover:bg-neutral-800 hover:text-white text-xs font-semibold transition-all flex items-center justify-center space-x-2">
@@ -854,7 +854,8 @@
                     "학습된 가중치 데이터를 활용해 사람의 개입 없이 최선의 게임 플레이 자동 수행"
                 ],
                 tags: ["Python", "PyTorch", "Q-Learning", "DQN", "Game AI"],
-                github: "https://github.com/psinserver-jpg/osu-ai"
+                docs: "https://psinserver-jpg.github.io/osu-ai-docs/",
+                docsLabel: "프로젝트 문서 보기"
             },
             4: {
                 title: "Powder ORM",
@@ -906,7 +907,7 @@
                     </button>
                     ` : ''}
                     ${data.docs ? `
-                    <a href="${data.docs}" target="_blank" rel="noopener noreferrer" class="flex-1 py-2.5 rounded-lg mono-card border border-neutral-700 hover:border-neutral-400 text-center font-bold text-xs transition-all flex items-center justify-center space-x-2">
+                    <a href="${data.docs}" target="_blank" rel="noopener noreferrer" class="${data.github ? 'mono-card border border-neutral-700 hover:border-neutral-400' : 'btn-theme-primary'} flex-1 py-2.5 rounded-lg text-center font-bold text-xs transition-all flex items-center justify-center space-x-2">
                         <i class="fa-solid fa-file-lines"></i>
                         <span>${data.docsLabel || '공식 문서 보기'}</span>
                     </a>
