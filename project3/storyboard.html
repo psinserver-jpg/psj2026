@@ -141,7 +141,12 @@
                 </div>
             </div>
 
-            <nav class="flex items-center space-x-1 sm:space-x-3 text-xs sm:text-sm font-medium">
+            <nav class="flex items-center space-x-1 sm:space-x-2 text-xs sm:text-sm font-medium">
+                <a href="../index.html"
+                    class="px-3.5 py-1.5 rounded-lg bg-white text-black font-extrabold text-xs flex items-center space-x-1.5 hover:bg-neutral-200 transition shadow-lg mr-1">
+                    <i class="fa-solid fa-house"></i>
+                    <span>홈으로</span>
+                </a>
                 <a href="#overview"
                     class="px-3 py-1.5 rounded-lg text-neutral-300 hover:text-white hover:bg-neutral-800 transition">기획 개요</a>
                 <a href="#player"
@@ -151,7 +156,7 @@
                 <a href="#checklist"
                     class="px-3 py-1.5 rounded-lg text-neutral-300 hover:text-white hover:bg-neutral-800 transition">체크리스트</a>
                 <a href="#final-video"
-                    class="px-3 py-1.5 rounded-lg text-black bg-white font-bold hover:bg-neutral-200 transition"><i
+                    class="px-3 py-1.5 rounded-lg text-neutral-200 border border-neutral-700 font-bold hover:border-white hover:text-white transition"><i
                         class="fa-solid fa-film mr-1"></i>최종 완성 영상</a>
             </nav>
         </div>
@@ -924,6 +929,13 @@ Style: bright, warm, cinematic Korean high school promotional video, natural day
             </div>
         </div>
     </section>
+
+    <!-- Floating Home Button -->
+    <a href="../index.html"
+        class="fixed bottom-5 left-5 z-40 bg-neutral-900/90 backdrop-blur-md border border-neutral-700 hover:border-white text-white text-xs font-mono font-bold px-4 py-3 rounded-xl shadow-2xl transition-all duration-300 flex items-center gap-2 hover:scale-105">
+        <i class="fa-solid fa-house text-sm"></i>
+        <span>홈으로 (포트폴리오 돌아가기)</span>
+    </a>
 
     <!-- Toast Notification for Copying -->
     <div id="toast"
